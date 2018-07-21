@@ -7,4 +7,4 @@ FROM microsoft/dotnet:2.1-runtime as runtime
 WORKDIR /app
 COPY --from=build /app/server/out ./
 COPY client ./client/
-CMD ["dotnet", "server.dll"]
+CMD dotnet server.dll

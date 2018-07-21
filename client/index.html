@@ -2,24 +2,32 @@
 <html>
 
 <head>
-    <title>Simple</title>
+    <title>Suave-Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
 </head>
 
 <body>
-    <h1>Simple</h1>
-    <form>
-        <div>
-            <label for="inputText">Input</label>
-            <input type="text" id="inputText">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h1>Suave-Simple</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="inputText">Input</label>
+                        <input class="form-control" type="text" id="inputText" placeholder="Input" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-sm" type="submit" id="submitButton">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="outputText">Output</label>
+                        <input class="form-control" type="text" id="outputText" placeholder="Output" readonly>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <button type="submit" id="submitButton">Submit</button>
-        </div>
-        <div>
-            <label for="outputText">Output</label>
-            <input type="text" id="outputText" readonly>
-        </div>
-    </form>
+    </div>
+
     <script src="index.js"></script>
 </body>
 
