@@ -1,6 +1,9 @@
 const inputText = document.getElementById('inputText')
 const outputText = document.getElementById('outputText')
 const submitButton = document.getElementById('submitButton')
+const resetButton = document.getElementById('resetButton')
+
+inputText.focus()
 
 submitButton.addEventListener('click', function(e) {
   e.preventDefault()
@@ -13,4 +16,10 @@ submitButton.addEventListener('click', function(e) {
     }
   }
   xhr.send()
+})
+
+resetButton.addEventListener('click', function() {
+  inputText.value = ''
+  outputText.value = ''
+  inputText.focus()
 })
