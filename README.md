@@ -4,6 +4,13 @@ This repo contains a very simple F# app that uses [Suave.IO](https://suave.io/) 
 has a form that can be used to convert a string to uppercase via a GET call to `/api/toUpper/<string>`.
 A docker image is built and deployed to Heroku.
 
+# Deploying
+
+```
+heroku container:push web
+heroku container:release web
+```
+
 # Notes
 
 ## Dockerfile
